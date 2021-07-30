@@ -1,0 +1,30 @@
+18:05:50.480 karate.env system property was: null 
+18:05:50.483 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+18:05:50.798 response time in milliseconds: 313.90
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4632
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 676663b20b21de05-BOM
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 29 Jul 2021 12:35:50 GMT
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RXK7SuJ05KOO6ULWwpfudgwm7WEvj9bKFREelqyuhHi%2FN%2BSs4WqC8cuKgh26Z%2F1ZdwE24yIhFdNmE2WYyoI8BiGpBezBzX0CzR6OLy6Zallw8pIlc12uqnC%2BMjw%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+

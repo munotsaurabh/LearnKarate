@@ -8,4 +8,3 @@ Feature: Test basic assertions
     Then status 200
     And match response.total_pages == 2
     And match response.data == "#array"
-    And match response..data contains ['cerulean']

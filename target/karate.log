@@ -2431,3 +2431,691 @@
 {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 
 16:30:22.447 [main] ERROR com.intuit.karate - assertion failed: path: $..data[*], actual: [[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}]], expected: 'cerulean', reason: actual value does not contain expected
+19:34:20.368 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:34:20.776 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 87
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Virat Kohli","gender":"male","email":"virat.kohli@bcci.com","status":"active"}
+
+19:34:21.486 [main] DEBUG com.intuit.karate - response time in milliseconds: 708.18
+1 < 404
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:04:21 GMT
+1 < Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'; payment 'none'
+1 < Link: </assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css>; rel=preload; as=style; nopush,</packs/js/application-9639091a4dd645353e4d.js>; rel=preload; as=script; nopush
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 93d98dfa-c0ca-4047-8832-adc506843be1
+1 < X-Runtime: 0.006382
+1 < X-XSS-Protection: 1; mode=block
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Sr1dDrOmuNUT8_Wam2eUzTJieR2DvvCQm6QBLQZdMBMHOKwn3mJI1MNhHRN3WqLWsVFYq8fxo083p3z4fUVg5w" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+
+19:34:21.506 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2351; The entity "nbsp" was referenced, but not declared.
+19:34:21.507 [main] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 708, url: https://gorest.co.in/public/v1/users/users, response: <!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Sr1dDrOmuNUT8_Wam2eUzTJieR2DvvCQm6QBLQZdMBMHOKwn3mJI1MNhHRN3WqLWsVFYq8fxo083p3z4fUVg5w" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+19:35:57.209 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:35:57.667 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+1 > Connection: Keep-Alive
+1 > Content-Length: 87
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Virat Kohli","gender":"male","email":"virat.kohli@bcci.com","status":"active"}
+
+19:35:58.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 476.92
+1 < 404
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:05:58 GMT
+1 < Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'; payment 'none'
+1 < Link: </assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css>; rel=preload; as=style; nopush,</packs/js/application-9639091a4dd645353e4d.js>; rel=preload; as=script; nopush
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 0d6d0ba1-1bd3-4628-9288-7093433baebb
+1 < X-Runtime: 0.004538
+1 < X-XSS-Protection: 1; mode=block
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="u-DaVSthsUzDkBBUnzsNJvpcIog57oj7Eff1sLpjDGKLxH9ylIIdhq-F95DsKTmOyUJFHQp7wBqbOV2-DXet7g" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+
+19:35:58.161 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2351; The entity "nbsp" was referenced, but not declared.
+19:35:58.162 [main] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 477, url: https://gorest.co.in/public/v1/users/users, response: <!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="u-DaVSthsUzDkBBUnzsNJvpcIog57oj7Eff1sLpjDGKLxH9ylIIdhq-F95DsKTmOyUJFHQp7wBqbOV2-DXet7g" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+19:36:27.835 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:28.078 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:36:28.678 [main] DEBUG com.intuit.karate - response time in milliseconds: 598.14
+1 < 200
+1 < Age: 5756
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6787ddf4ebdd1e08-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:06:28 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 12:30:32 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9hD2Zgpu5BIe0bXYsN1hCFRVexze%2Fk5OFC%2BGaBIcHlVIX%2BBcvQU4l2tpP2xYyriNp86pI%2F23NuhLw7gHY0qTwm%2BxrLuqqv7%2FCepDgdowizvsi9tCL0X8VXy7V%2Bg%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:36:28.689 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:28.697 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:36:29.199 [main] DEBUG com.intuit.karate - response time in milliseconds: 500.78
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 6920
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6787ddf848db26bd-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:06:29 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Thu, 29 Jul 2021 07:33:39 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ht4DDzqN7PeMcHkG3rWamlpuxM9fKYT5L0te%2F6S%2BIRNd25GbncC%2B96RDjH9ULvxr2FpnNGUV0vw47t5NapgDLNWWKnRqt%2FirQzURVRY%2BVm70eIOK0gXdGvkk0ag%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:36:29.207 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:29.217 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unknown
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:36:29.478 [main] DEBUG com.intuit.karate - response time in milliseconds: 259.02
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4765
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6787ddf9e98532bb-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:06:29 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 04:16:22 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MuCZOTQmiTFv46BFfqFVGaLUzKM1xV7o%2FuEEzxaOfPWnNVQD7cxTjuM1dHmBk%2BniN%2FbZ34CImNRVHhpGZ7qVoJfBwDOvRd38Z9BaJM61b4y1gAzGcAnJCEWBXig%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:36:29.562 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:29.564 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unknown
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:36:29.831 [main] DEBUG com.intuit.karate - response time in milliseconds: 265.09
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4765
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6787ddfc2c7a1da1-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:06:29 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 04:16:22 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KkJ6cFaLps%2FoZvk9yQou21srk88704w4EW%2Bk%2B9GITbXlRxGjEh9iAdTJWFJR0n1sXBnto9n8n8uKMtv7Jzai2A%2BG6diPXEWjyzd3IKDmuJWK%2BgW9A8YrZr3JP%2BQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:36:29.857 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:29.861 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:36:30.093 [main] DEBUG com.intuit.karate - response time in milliseconds: 231.61
+1 < 200
+1 < Age: 5758
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6787ddfdcde31d89-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:06:30 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 12:30:32 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3MyP%2B%2BEP%2FK7bPJ7YC%2FibNKqHxIg4LfCb8A96DFrDhUHy7ZmwDqe28gyqLqo5mX%2FA9QH%2BHhKI7dBeXK5EtTSTqxSM4ygTmfYd0R1tnlO%2BeokPWattB3Xq7Wkmg64%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:36:30.100 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:30.103 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+19:36:30.367 [main] DEBUG com.intuit.karate - response time in milliseconds: 263.36
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 6921
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 6787ddff8f9d1d1c-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:06:30 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Thu, 29 Jul 2021 07:33:39 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=zot5ZYv2FglyUWlzsqTkK5fiR2vuXW%2BnGURRihH9Aqyc1UKycOGWjEhWpmeEXgI3PofZGgtx0Yu0ZXs3VoZJnpemgdqKy6QRg%2FeA%2Ft6HJi%2BtCILL5xBq2AaqF%2FA%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+19:36:30.391 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:30.406 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+1 > Connection: Keep-Alive
+1 > Content-Length: 87
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Virat Kohli","gender":"male","email":"virat.kohli@bcci.com","status":"active"}
+
+19:36:30.816 [main] DEBUG com.intuit.karate - response time in milliseconds: 407.57
+1 < 404
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:06:30 GMT
+1 < Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'; payment 'none'
+1 < Link: </assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css>; rel=preload; as=style; nopush,</packs/js/application-9639091a4dd645353e4d.js>; rel=preload; as=script; nopush
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: e5d80745-68d3-418c-954f-835da981d3bc
+1 < X-Runtime: 0.006055
+1 < X-XSS-Protection: 1; mode=block
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="GMgVWQdAotUk2Zgd53LPUlqPqxK0e5yA6MZE4NrcQvbjntR1kEPhTxS3cyw8QM1DCegdNwrzVkz3MCdDUKjP5g" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+
+19:36:30.823 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2351; The entity "nbsp" was referenced, but not declared.
+19:36:30.823 [main] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 408, url: https://gorest.co.in/public/v1/users/users, response: <!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="GMgVWQdAotUk2Zgd53LPUlqPqxK0e5yA6MZE4NrcQvbjntR1kEPhTxS3cyw8QM1DCegdNwrzVkz3MCdDUKjP5g" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+19:40:13.692 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:40:14.069 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+1 > Connection: Keep-Alive
+1 > Content-Length: 87
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Virat Kohli","gender":"male","email":"virat.kohli@bcci.com","status":"active"}
+
+19:40:14.599 [main] DEBUG com.intuit.karate - response time in milliseconds: 527.81
+1 < 404
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: text/html; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:10:14 GMT
+1 < Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'; payment 'none'
+1 < Link: </assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css>; rel=preload; as=style; nopush,</packs/js/application-9639091a4dd645353e4d.js>; rel=preload; as=script; nopush
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 99f72d4d-d4d0-4d06-a465-cc685d7e8e51
+1 < X-Runtime: 0.004569
+1 < X-XSS-Protection: 1; mode=block
+<!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="2ycahl6Ut5nn9SwLBds4HyFGa2CAGxvUoZv8b1DfPqnMsKDVWYLjwWoGGcMPRN09vtH7VswYH4z2ijZlngmcSQ" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+
+19:40:14.615 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2351; The entity "nbsp" was referenced, but not declared.
+19:40:14.616 [main] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 528, url: https://gorest.co.in/public/v1/users/users, response: <!DOCTYPE html><html><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /><link href="/favicon.ico" rel="icon" type="image/x-icon" /><title>Page Not Found | GO REST</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="2ycahl6Ut5nn9SwLBds4HyFGa2CAGxvUoZv8b1DfPqnMsKDVWYLjwWoGGcMPRN09vtH7VswYH4z2ijZlngmcSQ" /><link rel="stylesheet" media="all" href="/assets/application-5a840a9125a4350d18430fb903d8677df6b2fa447d42eef3ff54d343991ce288.css" data-turbolinks-track="reload" /><script src="/packs/js/application-9639091a4dd645353e4d.js" data-turbolinks-track="reload"></script></head><body><div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><div class="container"><a class="navbar-brand" href="/"><i class="fas fa-exchange-alt"></i> Go Rest</a><button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarResponsive"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="/chandamama-stories"><i class="fas fa-cloud-moon"></i> Chandamama Stories</a></li><li class="nav-item"><a class="nav-link" href="/rest-console"><i class="fab fa-linux"></i> Rest Console</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" area="expanded false" href="#"><i class="fas fa-tools"></i> Tools <span class="caret"></span></a><div class="dropdown-menu"><a class="dropdown-item" href="/tools/base64-encode-decode">Base64 Encode/Decode</a><a class="dropdown-item" href="/tools/url-encode-decode">Url Encode/Decode</a><a class="dropdown-item" href="/tools/gcode-translator">G-Code Translator</a></div></li><li class="nav-item"><a class="nav-link" href="/consumer/login">Login</a></li></ul></div></div></div><div class="container"><style type="text/css">.code-text code {color: #bdbdbd;display: block;}.code-text code b {color: #81a2be;font-weight: 900;}.code-text code em {color: #b294bb;font-style: unset;}.code-text code i {color: #b5bd68;}.code-text code span {color: #f0c674;}</style><div class="p-5"><h1 class="text- display-3 mb-3 text-danger" style="font-weight: 900; letter-spacing: 2px;"><i class="fas fa-ghost mr-3"></i>HTTP: 404</h1><h3 class="leaad code-text mb-5"><code class="mb-3"><span>this_page</span>.<em>not_found</em> = true</code></h3><p class="lead code-text"><code class="mb-2"><span>if</span> <b>you_spelt_it_wrong</b> <br />&nbsp;&nbsp;<span>then_try_again</span><br /></code><code class="mb-2"><span>elsif <b>we_screwed_up</b></span> <br />&nbsp;&nbsp;<em>puts</em> <i>"We're really sorry about that."</i><br/></code><code class="mb-2"><span>end</span></code><code class="mb-2"><span>redirect_to</span> <em>home_page_url</em></code></p></div></div><div class="container"><footer class="footer mt-5"><ul class="list-inline"><li class="list-inline-item">&copy; Go Rest 2021</li><li class="list-inline-item float-lg-right"><a href="/privacy-policy">Privacy Policy</a></li><li class="list-inline-item float-lg-right mr-3"><a href="/contact-us">Contact Us</a></li></ul></footer></div></body></html>
+19:42:55.230 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:43:33.963 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:43:34.397 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+1 > Connection: Keep-Alive
+1 > Content-Length: 87
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Virat Kohli","gender":"male","email":"virat.kohli@bcci.com","status":"active"}
+
+19:43:36.259 [main] DEBUG com.intuit.karate - response time in milliseconds: 1861.08
+1 < 201
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:13:36 GMT
+1 < ETag: W/"94c3bc5d75a768fedfb77174907c867d"
+1 < Location: https://gorest.co.in/public/v1/users/1638
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 937eba42-e793-46c0-80b4-f2ba8af92b86
+1 < X-Runtime: 0.024259
+1 < X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"id":1638,"name":"Virat Kohli","email":"virat.kohli@bcci.com","gender":"male","status":"active"}}
+
+19:43:36.260 [main] ERROR com.intuit.karate - status code was: 201, expected: 200, response time: 1861, url: https://gorest.co.in/public/v1/users, response: {"meta":null,"data":{"id":1638,"name":"Virat Kohli","email":"virat.kohli@bcci.com","gender":"male","status":"active"}}
+19:43:56.151 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:43:56.599 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+1 > Connection: Keep-Alive
+1 > Content-Length: 87
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Virat Kohli","gender":"male","email":"virat.kohli@bcci.com","status":"active"}
+
+19:43:57.074 [main] DEBUG com.intuit.karate - response time in milliseconds: 473.61
+1 < 422
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:13:57 GMT
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 7addb13a-678b-446e-9d93-d629ca729ed2
+1 < X-Runtime: 0.013924
+1 < X-XSS-Protection: 1; mode=block
+{"meta":null,"data":[{"field":"email","message":"has already been taken"}]}
+
+19:43:57.075 [main] ERROR com.intuit.karate - status code was: 422, expected: 201, response time: 474, url: https://gorest.co.in/public/v1/users, response: {"meta":null,"data":[{"field":"email","message":"has already been taken"}]}
+19:44:31.589 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:44:32.033 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Rohit Sharma","gender":"male","email":"rohit@bcci.com","status":"active"}
+
+19:44:32.964 [main] DEBUG com.intuit.karate - response time in milliseconds: 929.46
+1 < 201
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:14:32 GMT
+1 < ETag: W/"c229353076e1db5af294c5f9d042dcb0"
+1 < Location: https://gorest.co.in/public/v1/users/1639
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: f97e4d61-56ae-4033-b718-09db054bd0e9
+1 < X-Runtime: 0.022191
+1 < X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"id":1639,"name":"Rohit Sharma","email":"rohit@bcci.com","gender":"male","status":"active"}}
+
+20:24:50.818 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:51.099 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+20:24:51.921 [main] DEBUG com.intuit.karate - response time in milliseconds: 818.95
+1 < 200
+1 < Age: 1025
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 678824d63a971da5-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:54:51 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 12:30:32 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hhX5bwc3xZLmdcTJw6%2Fjkm5pIpjoHza3P7sugR3Y6KbhFbbuRAnL7zYF8UGkEuu8gugIPR9lCn%2ByyMH5SmIj5IflFiDbOB5UPiCtWyKk6lJCczokCBM4To130GY%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+20:24:51.931 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:51.939 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+20:24:52.250 [main] DEBUG com.intuit.karate - response time in milliseconds: 310.27
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2563
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 678824d85f281da5-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:54:52 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Thu, 29 Jul 2021 07:33:39 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H7SQHqK%2BOFmWJiBg%2FILyGm4bYvTSjlTIlQ%2Finz8Hd4xfN16ccizkMNK6kVWtrhX4sjZ2t%2B2LadDELbF%2Bhf0C0p5hqKfkdBGFrQvwpia2jaH22IgZ2kxijPiDtEM%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+20:24:52.257 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:52.263 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unknown
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+20:24:52.518 [main] DEBUG com.intuit.karate - response time in milliseconds: 254.65
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 307
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 678824da0d461d14-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:54:52 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 04:16:22 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Q%2FJvawDeH0hyZ6s9bQWWvr9eqhDObShdnL%2F6bxLCxaDIhe179J0xVyMTv%2Fy4nrHRJRznkHwB2dbqP0d8HmUjNsfY9n5G6Dr3N29e0hjsYgp9J2YIOmBhx3CbR%2BA%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+20:24:52.612 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:52.614 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/unknown
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+20:24:52.893 [main] DEBUG com.intuit.karate - response time in milliseconds: 277.97
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 307
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 678824dc59dc32af-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:54:52 GMT
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 04:16:22 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3f6WNYogK9vrk44MdalYxpUDeCfbwdOooyd6btN91s7IQKDU268qHJeyKC4mzZf4TNrfCo%2FhxxTsqnt41U2943faOCWSNkXb9Nv5Uq3QDjIwNpCtCzfZz0E1Yho%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+20:24:52.914 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:52.917 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+20:24:53.155 [main] DEBUG com.intuit.karate - response time in milliseconds: 237.13
+1 < 200
+1 < Age: 1027
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 678824de0e031da9-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:54:53 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Mon, 02 Aug 2021 12:30:32 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rcuuLqAvOoRKcNUCcJeMQIVc0tlgxFOMqiGkJwhJKi8KpWStvF9VP%2BMY7dwzMNFwXbwOK7x3SroOR0tv4l%2BYpez29rAtwTn4NU0NPDkrA1cvCAR0HewY4vV%2FFtI%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < access-control-allow-origin: *
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < via: 1.1 vegur
+1 < x-powered-by: Express
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+20:24:53.161 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:53.165 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+20:24:53.584 [main] DEBUG com.intuit.karate - response time in milliseconds: 417.48
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2564
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 678824df9d691d2d-BLR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:54:53 GMT
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Last-Modified: Thu, 29 Jul 2021 07:33:39 GMT
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=omdaJXt5z6A1NP4DVCR9vvZtrH%2FY0YMPPup4gjGRfi9ACaucXIXPwxzqnPWB2eafu0AjcDYWzpWhbZ%2FIj%2F%2BC9g2t3WUNdVebhLKxqcxBS1ibPEHfJo5BwlfqS54%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+20:24:53.608 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:24:53.618 [main] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+1 > Connection: Keep-Alive
+1 > Content-Length: 85
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+{"name":"Dinesh Karthik","gender":"male","email":"dinesh@bcci.com","status":"active"}
+
+20:24:54.221 [main] DEBUG com.intuit.karate - response time in milliseconds: 602.13
+1 < 201
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 02 Aug 2021 14:54:54 GMT
+1 < ETag: W/"f7e5581cb0d621b41c3e6bea6adaebf7"
+1 < Location: https://gorest.co.in/public/v1/users/1654
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: a1f6abd7-b0cd-4064-a6fd-9fd4711a8919
+1 < X-Runtime: 0.028236
+1 < X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"id":1654,"name":"Dinesh Karthik","email":"dinesh@bcci.com","gender":"male","status":"active"}}
+
+20:24:54.231 [main] DEBUG com.intuit.karate - request:
+2 > GET https://gorest.co.in/public/v1/users/1654
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+20:24:54.603 [main] DEBUG com.intuit.karate - response time in milliseconds: 371.01
+2 < 200
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 02 Aug 2021 14:54:54 GMT
+2 < ETag: W/"f7e5581cb0d621b41c3e6bea6adaebf7"
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Server: nginx
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < Transfer-Encoding: chunked
+2 < Vary: [Accept-Encoding, Origin]
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-Request-Id: 31c6c12b-ae63-40c6-bb88-2cc307fc14fb
+2 < X-Runtime: 0.003349
+2 < X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"id":1654,"name":"Dinesh Karthik","email":"dinesh@bcci.com","gender":"male","status":"active"}}
+

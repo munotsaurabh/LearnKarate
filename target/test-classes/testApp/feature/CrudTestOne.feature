@@ -1,9 +1,10 @@
+@demo
 Feature: Basic API testing
+
   Scenario: Get single user
     Given url 'https://reqres.in/api/users/2'
     When method Get
     Then status 200
-
 
    Scenario: List all users
      Given url 'https://reqres.in/api/users'

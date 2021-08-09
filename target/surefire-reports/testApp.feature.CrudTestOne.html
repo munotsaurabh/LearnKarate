@@ -168,37 +168,36 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:2]</span><span class="scenario-name">Get single user</span>
+<span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">Get single user</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url 'https://reqres.in/api/users/2'</div>
-<div class="time-cell passed">0.001473</div>
+<div class="time-cell passed">0.001721</div>
 </div>
-<div class="preformatted">20:24:50.821 karate.env system property was: null</div>
+<div class="preformatted">15:24:45.480 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">When method Get</div>
-<div class="time-cell passed">1.060261</div>
+<div class="time-cell passed">0.685545</div>
 </div>
-<div class="preformatted">20:24:51.099 request:
+<div class="preformatted">15:24:45.696 request:
 1 &gt; GET https://reqres.in/api/users/2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
 
-20:24:51.921 response time in milliseconds: 818.95
+15:24:46.212 response time in milliseconds: 514.07
 1 &lt; 200
-1 &lt; Age: 1025
+1 &lt; Age: 44
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 678824d63a971da5-BLR
+1 &lt; CF-RAY: 67a762be5c5fde72-BOM
 1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 02 Aug 2021 14:54:51 GMT
+1 &lt; Date: Fri, 06 Aug 2021 09:54:46 GMT
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Last-Modified: Mon, 02 Aug 2021 12:30:32 GMT
-1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hhX5bwc3xZLmdcTJw6%2Fjkm5pIpjoHza3P7sugR3Y6KbhFbbuRAnL7zYF8UGkEuu8gugIPR9lCn%2ByyMH5SmIj5IflFiDbOB5UPiCtWyKk6lJCczokCBM4To130GY%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cNgBanh1ow5qe9xdq9ipFEk4R8gEbOrtcVYUNkNI8m70MLe%2FK0188smyQXaOx5JbPbETVxEJJCINRFMHW%2B7s2J88xnJ8IHFnqsA0Boqb%2F6aViA9sgsA6I87RcfA%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
@@ -210,99 +209,97 @@
 {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000014</div>
+<div class="time-cell passed">0.000013</div>
 </div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [2:8]</span><span class="scenario-name">List all users</span>
+<span class="scenario-keyword">Scenario: [2:9]</span><span class="scenario-name">List all users</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url 'https://reqres.in/api/users'</div>
-<div class="time-cell passed">0.002009</div>
+<div class="time-cell passed">0.00271</div>
 </div>
-<div class="preformatted">20:24:51.931 karate.env system property was: null</div>
+<div class="preformatted">15:24:46.231 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">Given param page = 2</div>
-<div class="time-cell passed">0.00211</div>
+<div class="time-cell passed">0.002333</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Get</div>
-<div class="time-cell passed">0.314422</div>
+<div class="time-cell passed">0.299518</div>
 </div>
-<div class="preformatted">20:24:51.939 request:
+<div class="preformatted">15:24:46.241 request:
 1 &gt; GET https://reqres.in/api/users?page=2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
 
-20:24:52.250 response time in milliseconds: 310.27
+15:24:46.537 response time in milliseconds: 294.88
 1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 2563
+1 &lt; Age: 3007
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 678824d85f281da5-BLR
+1 &lt; CF-RAY: 67a762c0889ade2d-BOM
 1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 02 Aug 2021 14:54:52 GMT
-1 &lt; Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 &lt; Date: Fri, 06 Aug 2021 09:54:46 GMT
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Last-Modified: Thu, 29 Jul 2021 07:33:39 GMT
-1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=H7SQHqK%2BOFmWJiBg%2FILyGm4bYvTSjlTIlQ%2Finz8Hd4xfN16ccizkMNK6kVWtrhX4sjZ2t%2B2LadDELbF%2Bhf0C0p5hqKfkdBGFrQvwpia2jaH22IgZ2kxijPiDtEM%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hgCv243YTdU6eWrjABFwhrEsugf0iFfgLY7VcZuJ83IHd7jmzwtmQmdvz0%2BZxHbAeMwveqEqS%2BgwEMG0ciKRshhuNpiGQvPqpHN5kDn%2B8M2vOcGqFQPAw1b9l%2BU%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
+1 &lt; access-control-allow-origin: *
 1 &lt; alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+1 &lt; etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 &lt; via: 1.1 vegur
+1 &lt; x-powered-by: Express
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.00001</div>
+<div class="time-cell passed">0.000008</div>
 </div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [3:14]</span><span class="scenario-name">Separating path from API url</span>
+<span class="scenario-keyword">Scenario: [3:15]</span><span class="scenario-name">Separating path from API url</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.001806</div>
+<div class="time-cell passed">0.001907</div>
 </div>
-<div class="preformatted">20:24:52.257 karate.env system property was: null</div>
+<div class="preformatted">15:24:46.544 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'unknown'</div>
-<div class="time-cell passed">0.001646</div>
+<div class="time-cell passed">0.001501</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method Get</div>
-<div class="time-cell passed">0.257242</div>
+<div class="time-cell passed">0.251507</div>
 </div>
-<div class="preformatted">20:24:52.263 request:
+<div class="preformatted">15:24:46.549 request:
 1 &gt; GET https://reqres.in/api/unknown
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
 
-20:24:52.519 response time in milliseconds: 254.65
+15:24:46.799 response time in milliseconds: 248.87
 1 &lt; 200
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 307
+1 &lt; Age: 4566
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 678824da0d461d14-BLR
+1 &lt; CF-RAY: 67a762c22dd1de21-BOM
 1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 02 Aug 2021 14:54:52 GMT
+1 &lt; Date: Fri, 06 Aug 2021 09:54:46 GMT
 1 &lt; Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Last-Modified: Mon, 02 Aug 2021 04:16:22 GMT
-1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Q%2FJvawDeH0hyZ6s9bQWWvr9eqhDObShdnL%2F6bxLCxaDIhe179J0xVyMTv%2Fy4nrHRJRznkHwB2dbqP0d8HmUjNsfY9n5G6Dr3N29e0hjsYgp9J2YIOmBhx3CbR%2BA%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UEejJDIu2m%2B14sqcY1LV3oAOjkQc99N4sO1cAecoKwO%2FqWrDLoy9kAdkdmEavweeH7QORBDp4U%2F%2BtDnFkcyGGKBQJM6gYwk0dWAehyfKwSazDZCiF3YK3xwKRvo%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
@@ -312,7 +309,7 @@
 {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000011</div>
+<div class="time-cell passed">0.000012</div>
 </div>
 </div>
 </div>

@@ -15,5 +15,3 @@ Feature: Test API chaining
     When method Get
     Then status 200
     And match response.data.email == 'dinesh@bcci.com'
-
-

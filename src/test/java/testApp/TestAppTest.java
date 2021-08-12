@@ -13,9 +13,9 @@ class TestAppTest {
         return new Karate().relativeTo(getClass());
     }
 
-//    @Karate.Test
-//    Karate testTags() {
-//        return new Karate().feature().tags("@demo").relativeTo(getClass());
-//    }
+    @Karate.Test
+    Karate testTags() {
+        return new Karate().feature().tags("@delete").relativeTo(getClass());
+    }
     
 }

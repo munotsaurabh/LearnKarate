@@ -2,7 +2,7 @@ Feature: Test API chaining
   Background: Define url
     Given url 'https://gorest.co.in/public/v1/'
 
-  Scenario: API chaining test
+  Scenario: API chaining test (POST)
     Given header Content-Type = "application/json"
     Given header Authorization = "Bearer "+ "41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808"
     Given path 'users'

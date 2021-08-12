@@ -6,7 +6,8 @@ Feature: Basic API testing
     When method Get
     Then status 200
 
-   Scenario: List all users
+@regression
+  Scenario: List all users
      Given url 'https://reqres.in/api/users'
      Given param page = 2
      When method Get

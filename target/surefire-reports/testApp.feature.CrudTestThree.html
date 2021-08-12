@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>src.test.java.examples.users.users</title>
+<title>testApp.feature.CrudTestThree</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,464 +168,202 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">get all users and then get the first user by id</span>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Perform delete operation</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
-<div class="time-cell passed">0.007209</div>
+<div class="step-cell passed">Given url 'https://gorest.co.in/public/v1/'</div>
+<div class="time-cell passed">0.001845</div>
 </div>
-<div class="preformatted">14:32:20.483 karate.env system property was: null</div>
+<div class="preformatted">15:58:05.823 karate.env system property was: null</div>
+<div class="step-row">
+<div class="step-cell passed">Given header Content-Type = "application/json"</div>
+<div class="time-cell passed">0.001625</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given header Authorization = "Bearer "+ "41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808"</div>
+<div class="time-cell passed">0.002056</div>
+</div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'users'</div>
-<div class="time-cell passed">0.002739</div>
+<div class="time-cell passed">0.001419</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">1.429752</div>
+<div class="step-cell passed">And request {"name":"Ishant Sharma", "gender":"male", "email":"ishant.s1@15ce.com", "status":"active"}</div>
+<div class="time-cell passed">0.000158</div>
 </div>
-<div class="preformatted">14:32:21.404 request:
-1 &gt; GET https://jsonplaceholder.typicode.com/users
+<div class="step-row">
+<div class="step-cell passed">When method Post</div>
+<div class="time-cell passed">0.709541</div>
+</div>
+<div class="preformatted">15:58:06.080 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
 1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
 1 &gt; Connection: Keep-Alive
-1 &gt; Host: jsonplaceholder.typicode.com
-1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
-
-14:32:22.035 response time in milliseconds: 905.91
-1 &lt; 200
-1 &lt; Access-Control-Allow-Credentials: true
-1 &lt; Age: 24892
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 6754b03b18cede52-BOM
-1 &lt; Cache-Control: max-age=43200
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 27 Jul 2021 09:02:21 GMT
-1 &lt; Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Expires: -1
-1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-1 &lt; Pragma: no-cache
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=5v8ObqIgkFji7j6tzmBpF7G4HawqI6tifREKDgCybBCjBKuWmlqB2jNTgqbs9kDPDS%2FHuWZoSvACj1YdKsv6ywomF4tdOl3o6haZJoqa5XO0XB27AyUvha7Tq%2FGMKqa5wZir%2BAcz%2BXURrS%2BmrMBQ"}],"group":"cf-nel","max_age":604800}
-1 &lt; Server: cloudflare
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Origin, Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Powered-By: Express
-1 &lt; X-Ratelimit-Limit: 1000
-1 &lt; X-Ratelimit-Remaining: 999
-1 &lt; X-Ratelimit-Reset: 1624616910
-1 &lt; alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-[
-  {
-    "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
-    "address": {
-      "street": "Kulas Light",
-      "suite": "Apt. 556",
-      "city": "Gwenborough",
-      "zipcode": "92998-3874",
-      "geo": {
-        "lat": "-37.3159",
-        "lng": "81.1496"
-      }
-    },
-    "phone": "1-770-736-8031 x56442",
-    "website": "hildegard.org",
-    "company": {
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net",
-      "bs": "harness real-time e-markets"
-    }
-  },
-  {
-    "id": 2,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
-    "address": {
-      "street": "Victor Plains",
-      "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-      "geo": {
-        "lat": "-43.9509",
-        "lng": "-34.4618"
-      }
-    },
-    "phone": "010-692-6593 x09125",
-    "website": "anastasia.net",
-    "company": {
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency",
-      "bs": "synergize scalable supply-chains"
-    }
-  },
-  {
-    "id": 3,
-    "name": "Clementine Bauch",
-    "username": "Samantha",
-    "email": "Nathan@yesenia.net",
-    "address": {
-      "street": "Douglas Extension",
-      "suite": "Suite 847",
-      "city": "McKenziehaven",
-      "zipcode": "59590-4157",
-      "geo": {
-        "lat": "-68.6102",
-        "lng": "-47.0653"
-      }
-    },
-    "phone": "1-463-123-4447",
-    "website": "ramiro.info",
-    "company": {
-      "name": "Romaguera-Jacobson",
-      "catchPhrase": "Face to face bifurcated interface",
-      "bs": "e-enable strategic applications"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
-    "address": {
-      "street": "Hoeger Mall",
-      "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
-      }
-    },
-    "phone": "493-170-9623 x156",
-    "website": "kale.biz",
-    "company": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
-    }
-  },
-  {
-    "id": 5,
-    "name": "Chelsey Dietrich",
-    "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
-    "address": {
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "geo": {
-        "lat": "-31.8129",
-        "lng": "62.5342"
-      }
-    },
-    "phone": "(254)954-1289",
-    "website": "demarco.info",
-    "company": {
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
-    }
-  },
-  {
-    "id": 6,
-    "name": "Mrs. Dennis Schulist",
-    "username": "Leopoldo_Corkery",
-    "email": "Karley_Dach@jasper.info",
-    "address": {
-      "street": "Norberto Crossing",
-      "suite": "Apt. 950",
-      "city": "South Christy",
-      "zipcode": "23505-1337",
-      "geo": {
-        "lat": "-71.4197",
-        "lng": "71.7478"
-      }
-    },
-    "phone": "1-477-935-8478 x6430",
-    "website": "ola.org",
-    "company": {
-      "name": "Considine-Lockman",
-      "catchPhrase": "Synchronised bottom-line interface",
-      "bs": "e-enable innovative applications"
-    }
-  },
-  {
-    "id": 7,
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "email": "Telly.Hoeger@billy.biz",
-    "address": {
-      "street": "Rex Trail",
-      "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
-      }
-    },
-    "phone": "210.067.6132",
-    "website": "elvis.io",
-    "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
-    }
-  },
-  {
-    "id": 8,
-    "name": "Nicholas Runolfsdottir V",
-    "username": "Maxime_Nienow",
-    "email": "Sherwood@rosamond.me",
-    "address": {
-      "street": "Ellsworth Summit",
-      "suite": "Suite 729",
-      "city": "Aliyaview",
-      "zipcode": "45169",
-      "geo": {
-        "lat": "-14.3990",
-        "lng": "-120.7677"
-      }
-    },
-    "phone": "586.493.6943 x140",
-    "website": "jacynthe.com",
-    "company": {
-      "name": "Abernathy Group",
-      "catchPhrase": "Implemented secondary concept",
-      "bs": "e-enable extensible e-tailers"
-    }
-  },
-  {
-    "id": 9,
-    "name": "Glenna Reichert",
-    "username": "Delphine",
-    "email": "Chaim_McDermott@dana.io",
-    "address": {
-      "street": "Dayna Park",
-      "suite": "Suite 449",
-      "city": "Bartholomebury",
-      "zipcode": "76495-3109",
-      "geo": {
-        "lat": "24.6463",
-        "lng": "-168.8889"
-      }
-    },
-    "phone": "(775)976-6794 x41206",
-    "website": "conrad.com",
-    "company": {
-      "name": "Yost and Sons",
-      "catchPhrase": "Switchable contextually-based project",
-      "bs": "aggregate real-time technologies"
-    }
-  },
-  {
-    "id": 10,
-    "name": "Clementina DuBuque",
-    "username": "Moriah.Stanton",
-    "email": "Rey.Padberg@karina.biz",
-    "address": {
-      "street": "Kattie Turnpike",
-      "suite": "Suite 198",
-      "city": "Lebsackbury",
-      "zipcode": "31428-2261",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
-      }
-    },
-    "phone": "024-648-3804",
-    "website": "ambrose.net",
-    "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
-    }
-  }
-]</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000018</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def first = response[0]</div>
-<div class="time-cell passed">0.031906</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users', first.id</div>
-<div class="time-cell passed">0.007887</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.357668</div>
-</div>
-<div class="preformatted">14:32:22.126 request:
-2 &gt; GET https://jsonplaceholder.typicode.com/users/1
-2 &gt; Accept-Encoding: gzip,deflate
-2 &gt; Connection: Keep-Alive
-2 &gt; Host: jsonplaceholder.typicode.com
-2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
-
-14:32:22.440 response time in milliseconds: 347.05
-2 &lt; 200
-2 &lt; Access-Control-Allow-Credentials: true
-2 &lt; Age: 19924
-2 &lt; CF-Cache-Status: HIT
-2 &lt; CF-RAY: 6754b03ddd42de46-BOM
-2 &lt; Cache-Control: max-age=43200
-2 &lt; Connection: keep-alive
-2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Tue, 27 Jul 2021 09:02:22 GMT
-2 &lt; Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
-2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2 &lt; Expires: -1
-2 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-2 &lt; Pragma: no-cache
-2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=V%2BGpmqbbk5LLq6NsQQZL3CCqi2If0%2Fx9SChb0Try6b9%2BfTgjzV%2Bg8tUJzG5ddMQ3EK4uAjhF8A41miKauu5pjxn%2FH9Omqr20%2Bozs7P7BEieNkNx28hDFjfS9HZwoaLfAfnVD6WqhIQYeEVJ67Zul"}],"group":"cf-nel","max_age":604800}
-2 &lt; Server: cloudflare
-2 &lt; Transfer-Encoding: chunked
-2 &lt; Vary: Origin, Accept-Encoding
-2 &lt; Via: 1.1 vegur
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-Powered-By: Express
-2 &lt; X-Ratelimit-Limit: 1000
-2 &lt; X-Ratelimit-Remaining: 999
-2 &lt; X-Ratelimit-Reset: 1625365865
-2 &lt; alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{
-  "id": 1,
-  "name": "Leanne Graham",
-  "username": "Bret",
-  "email": "Sincere@april.biz",
-  "address": {
-    "street": "Kulas Light",
-    "suite": "Apt. 556",
-    "city": "Gwenborough",
-    "zipcode": "92998-3874",
-    "geo": {
-      "lat": "-37.3159",
-      "lng": "81.1496"
-    }
-  },
-  "phone": "1-770-736-8031 x56442",
-  "website": "hildegard.org",
-  "company": {
-    "name": "Romaguera-Crona",
-    "catchPhrase": "Multi-layered client-server neural-net",
-    "bs": "harness real-time e-markets"
-  }
-}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.00001</div>
-</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [2:18]</span><span class="scenario-name">create a user and then get it by id</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
-<div class="time-cell passed">0.000329</div>
-</div>
-<div class="preformatted">14:32:22.455 karate.env system property was: null</div>
-<div class="step-row">
-<div class="step-cell passed">* def user =</div>
-<div class="time-cell passed">0.000287</div>
-</div>
-<div class="preformatted">{
-  "name": "Test User",
-  "username": "testuser",
-  "email": "test@user.com",
-  "address": {
-    "street": "Has No Name",
-    "suite": "Apt. 123",
-    "city": "Electri",
-    "zipcode": "54321-6789"
-  }
-}</div>
-<div class="step-row">
-<div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/users'</div>
-<div class="time-cell passed">0.002422</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">And request user</div>
-<div class="time-cell passed">0.000036</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method post</div>
-<div class="time-cell passed">1.111633</div>
-</div>
-<div class="preformatted">14:32:22.496 request:
-1 &gt; POST https://jsonplaceholder.typicode.com/users
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 160
+1 &gt; Content-Length: 87
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
-{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+{"name":"Ishant Sharma","gender":"male","email":"ishant.s1@15ce.com","status":"active"}
 
-14:32:23.571 response time in milliseconds: 1104.35
+15:58:06.618 response time in milliseconds: 536.12
 1 &lt; 201
-1 &lt; Access-Control-Allow-Credentials: true
-1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 6754b0405e7bde5a-BOM
-1 &lt; Cache-Control: no-cache
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 216
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 27 Jul 2021 09:02:23 GMT
-1 &lt; Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Expires: -1
-1 &lt; Location: http://jsonplaceholder.typicode.com/users/11
-1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-1 &lt; Pragma: no-cache
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gpjeAryxCm9C0mn2DmnQuF5Sd0QQeAKKxvUjY6kKWMs5k2oWasURa07N6rR4GmpppTiAYDSTt%2BPQ5c5Ww6THdpXngbOWm%2FX1z%2FrNBg8PFh%2FhxMSMYyrOFph7q99LdwBtlk6BQGvLjqXm1mYz8b8d"}],"group":"cf-nel","max_age":604800}
-1 &lt; Server: cloudflare
-1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
-1 &lt; Via: 1.1 vegur
+1 &lt; Date: Thu, 12 Aug 2021 10:28:06 GMT
+1 &lt; ETag: W/"846f84153761c7dbf156ecc820a1757d"
+1 &lt; Location: https://gorest.co.in/public/v1/users/1589
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Powered-By: Express
-1 &lt; X-Ratelimit-Limit: 1000
-1 &lt; X-Ratelimit-Remaining: 999
-1 &lt; X-Ratelimit-Reset: 1627376577
-1 &lt; alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{
-  "name": "Test User",
-  "username": "testuser",
-  "email": "test@user.com",
-  "address": {
-    "street": "Has No Name",
-    "suite": "Apt. 123",
-    "city": "Electri",
-    "zipcode": "54321-6789"
-  },
-  "id": 11
-}</div>
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Request-Id: 83b0dff8-7c36-4405-bce7-16767fc0436b
+1 &lt; X-Runtime: 0.021556
+1 &lt; X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"id":1589,"name":"Ishant Sharma","email":"ishant.s1@15ce.com","gender":"male","status":"active"}}</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
+<div class="time-cell passed">0.000014</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def id = response.data.id</div>
+<div class="time-cell passed">0.005454</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path 'users', id</div>
+<div class="time-cell passed">0.000152</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method Get</div>
+<div class="time-cell passed">0.418048</div>
+</div>
+<div class="preformatted">15:58:06.627 request:
+2 &gt; GET https://gorest.co.in/public/v1/users/1589
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: gorest.co.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+15:58:07.043 response time in milliseconds: 415.35
+2 &lt; 200
+2 &lt; Cache-Control: max-age=0, private, must-revalidate
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Thu, 12 Aug 2021 10:28:06 GMT
+2 &lt; ETag: W/"846f84153761c7dbf156ecc820a1757d"
+2 &lt; Referrer-Policy: strict-origin-when-cross-origin
+2 &lt; Server: nginx
+2 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: [Accept-Encoding, Origin]
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Download-Options: noopen
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Permitted-Cross-Domain-Policies: none
+2 &lt; X-Request-Id: 25fd8d63-67ab-46d5-9265-a0e495b8b511
+2 &lt; X-Runtime: 0.003309
+2 &lt; X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"id":1589,"name":"Ishant Sharma","email":"ishant.s1@15ce.com","gender":"male","status":"active"}}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
 <div class="time-cell passed">0.000009</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* def id = response.id</div>
-<div class="time-cell passed">0.003451</div>
+<div class="step-cell passed">And match response.data.email == 'ishant.s1@15ce.com'</div>
+<div class="time-cell passed">0.002938</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* print 'created id is: ', id</div>
-<div class="time-cell passed">0.003873</div>
+<div class="step-cell passed">Given header Content-Type = "application/json"</div>
+<div class="time-cell passed">0.000116</div>
 </div>
-<div class="preformatted">14:32:23.579 [print] created id is:  11</div>
 <div class="step-row">
-<div class="step-cell passed">Given path id</div>
-<div class="time-cell passed">0.000022</div>
+<div class="step-cell passed">Given header Authorization = "Bearer "+ "41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808"</div>
+<div class="time-cell passed">0.000102</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path 'users', id</div>
+<div class="time-cell passed">0.000099</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method Delete</div>
+<div class="time-cell passed">0.40315</div>
+</div>
+<div class="preformatted">15:58:07.048 request:
+3 &gt; DELETE https://gorest.co.in/public/v1/users/1589
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Authorization: Bearer 41ceaf2b5f5daad4d82191a8405555e465db5df4186dc82c9e16f33a57e36808
+3 &gt; Connection: Keep-Alive
+3 &gt; Content-Type: application/json
+3 &gt; Host: gorest.co.in
+3 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+15:58:07.450 response time in milliseconds: 401.41
+3 &lt; 204
+3 &lt; Cache-Control: no-cache
+3 &lt; Connection: keep-alive
+3 &lt; Date: Thu, 12 Aug 2021 10:28:07 GMT
+3 &lt; Referrer-Policy: strict-origin-when-cross-origin
+3 &lt; Server: nginx
+3 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+3 &lt; Vary: Origin
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Download-Options: noopen
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Permitted-Cross-Domain-Policies: none
+3 &lt; X-Request-Id: 3986aca3-a706-4161-a8d7-f7f9dde40b55
+3 &lt; X-Runtime: 0.017588
+3 &lt; X-XSS-Protection: 1; mode=block</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 204</div>
+<div class="time-cell passed">0.000013</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path 'users', id</div>
+<div class="time-cell passed">0.000221</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method Get</div>
+<div class="time-cell passed">0.360546</div>
+</div>
+<div class="preformatted">15:58:07.452 request:
+4 &gt; GET https://gorest.co.in/public/v1/users/1589
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Host: gorest.co.in
+4 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+15:58:07.811 response time in milliseconds: 358.03
+4 &lt; 404
+4 &lt; Cache-Control: no-cache
+4 &lt; Connection: keep-alive
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Date: Thu, 12 Aug 2021 10:28:07 GMT
+4 &lt; Referrer-Policy: strict-origin-when-cross-origin
+4 &lt; Server: nginx
+4 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Vary: [Accept-Encoding, Origin]
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-Download-Options: noopen
+4 &lt; X-Frame-Options: SAMEORIGIN
+4 &lt; X-Permitted-Cross-Domain-Policies: none
+4 &lt; X-Request-Id: d50fb5f7-baba-41a2-a464-18a669155c07
+4 &lt; X-Runtime: 0.002739
+4 &lt; X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"message":"Resource not found"}}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 404</div>
+<div class="time-cell passed">0.000012</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response.data.message == 'Resource not found'</div>
+<div class="time-cell passed">0.002406</div>
 </div>
 </div>
 </div>

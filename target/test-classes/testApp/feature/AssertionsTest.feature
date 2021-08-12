@@ -2,6 +2,7 @@ Feature: Test basic assertions
   Background: Define url
     Given url 'https://reqres.in/api'
 
+@regression
   Scenario: Basic assertions test
     Given path 'unknown'
     When method Get

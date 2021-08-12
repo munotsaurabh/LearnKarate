@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testApp.TestAppTest" time="2.037" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="testApp.TestAppTest" time="2.668" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,8 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/saurabh.munot/Documents/Karate/target/surefire/surefirebooter2677225786173595451.jar /Users/saurabh.munot/Documents/Karate/target/surefire 2021-08-06T15-24-39_443-jvmRun1 surefire2340764787462721707tmp surefire_06564057404206912859tmp"/>
+    <property name="sun.java.command" value="/Users/saurabh.munot/Documents/Karate/target/surefire/surefirebooter888135465597017315.jar /Users/saurabh.munot/Documents/Karate/target/surefire 2021-08-12T15-57-59_830-jvmRun1 surefire6807204415164139032tmp surefire_04037856200238633423tmp"/>
+    <property name="test" value="TestAppTest#testTags"/>
     <property name="surefire.test.class.path" value="/Users/saurabh.munot/Documents/Karate/target/test-classes:/Users/saurabh.munot/Documents/Karate/target/classes:/Users/saurabh.munot/.m2/repository/com/intuit/karate/karate-apache/0.9.4/karate-apache-0.9.4.jar:/Users/saurabh.munot/.m2/repository/com/intuit/karate/karate-core/0.9.4/karate-core-0.9.4.jar:/Users/saurabh.munot/.m2/repository/com/jayway/jsonpath/json-path/2.1.0/json-path-2.1.0.jar:/Users/saurabh.munot/.m2/repository/net/minidev/json-smart/2.2/json-smart-2.2.jar:/Users/saurabh.munot/.m2/repository/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar:/Users/saurabh.munot/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar:/Users/saurabh.munot/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/saurabh.munot/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/saurabh.munot/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/Users/saurabh.munot/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/Users/saurabh.munot/.m2/repository/info/picocli/picocli/3.0.1/picocli-3.0.1.jar:/Users/saurabh.munot/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/saurabh.munot/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/saurabh.munot/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/saurabh.munot/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/saurabh.munot/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/saurabh.munot/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/saurabh.munot/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/saurabh.munot/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/saurabh.munot/.m2/repository/com/intuit/karate/karate-junit5/0.9.4/karate-junit5-0.9.4.jar:/Users/saurabh.munot/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.4.0/junit-jupiter-api-5.4.0.jar:/Users/saurabh.munot/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/saurabh.munot/.m2/repository/org/junit/platform/junit-platform-commons/1.4.0/junit-platform-commons-1.4.0.jar:/Users/saurabh.munot/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.4.0/junit-jupiter-engine-5.4.0.jar:/Users/saurabh.munot/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/saurabh.munot/.m2/repository/org/junit/platform/junit-platform-engine/1.4.0/junit-platform-engine-1.4.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/saurabh.munot"/>
@@ -30,8 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="karate.options" value="--tags @demo"/>
-    <property name="surefire.real.class.path" value="/Users/saurabh.munot/Documents/Karate/target/surefire/surefirebooter2677225786173595451.jar"/>
+    <property name="surefire.real.class.path" value="/Users/saurabh.munot/Documents/Karate/target/surefire/surefirebooter888135465597017315.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_211-b12"/>
@@ -59,7 +59,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testAll[1][1]" classname="testApp.TestAppTest" time="0.82"/>
-  <testcase name="testAll[1][2]" classname="testApp.TestAppTest" time="0.321"/>
-  <testcase name="testAll[1][3]" classname="testApp.TestAppTest" time="0.332"/>
+  <testcase name="testTags[5][1]" classname="testApp.TestAppTest" time="2.175"/>
 </testsuite>
